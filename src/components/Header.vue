@@ -266,7 +266,7 @@ async function submitLogin() {
   };
 
   try {
-    const response = await apiClient.post('http://localhost:3000/users/login', loginData);
+    const response = await apiClient.post('/users/login', loginData);
 
     alert('Login successful!');
     loginSuccess(response.data);
@@ -297,7 +297,7 @@ async function submitRegister() {
   if (user.value !== null) return
 
   try {
-    const response = await apiClient.post('http://localhost:3000/users/register', {
+    const response = await apiClient.post('/users/register', {
       username: register.value.username,
       email: register.value.email,
       password: register.value.password,
