@@ -1,7 +1,7 @@
 <script setup>
 
 </script>
-
+// this component not used in the app
 <template>
   <div class="card notes">
     <div class="header">
